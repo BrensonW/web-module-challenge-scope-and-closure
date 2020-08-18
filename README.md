@@ -42,7 +42,11 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+closure is a combo of functions that are put together and has references to the things surronding it.  It helps you to access a scope of an outer function from an  inside function.
+
 2. Study the following code, then answer the questions below.
+
 
 ```js
 function personalDice(name){
@@ -63,8 +67,17 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+Closure is used in the function persolnalDice when it adds the const newRoll that is one value so then when we call the other consts (dans and zoes) they = to personalDice and add the name so it could pick dansRoll up and console log that because it searched inside the function and found name as the param or argument and then goes and finds the name Dan or zoe outside of the function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+When we roll dansRoll twice the first number could be from 1-6 so that could change but we will always see Dan's name of course 
+
 c. What is the lexical scope of `newRoll`? 
+
+so the variable that is defined outside the function is accessible to the inside of another function so dansRoll takes charge of newRoll and it is the outside of the function so Dan rolled a blank according to the console log. when the function looks for something called newRoll it sees it inside the function but when it searches for the name as the param it sees dan and so newRoll turns into dansRoll.
+
 
 ### Task 2c - Exit Ticket
 
